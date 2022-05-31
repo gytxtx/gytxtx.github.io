@@ -36,12 +36,12 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out. -->
 
-## KFACBT的网站
-Welcome
+# KFACBT的网站
+## Welcome
 
 你可能感兴趣的
 *   [首页](https://gytxtx.github.io/HomePage)
-*   [网页聊天室](https://arcxingye.github.io/utu.html?url=https://chat.getloli.com/room/@xingye)
+*   [博客](https://gytxtx.github.io/Blog)
 *   [amemei的黄油](https://amemei.github.io/utu.html?url=https://5e.fit/amemei) (Password:114514)
 *   [rickroll二维码获取](https://arcxingye.github.io/rr/qrcode)
 *   [短链/页面/二维码生成](https://5e.fit/)
@@ -67,11 +67,11 @@ Welcome
 	<br/>
 <font size="4"color="#0080FF">橘子海 (Orange Ocean) - 夏日漱石 (Summer Cozy Rock)</font>
 	<br/>
-	<font size="4"color="#0080FF">线路1</font>
+### 线路1
 	<br/>
 	<audio src="./HomePage/music.mp3" controls></audio>
 	<br/>
-	<font size="4"color="#0080FF">线路2</font>
+### 线路2
 	<br/>
 	<audio src="./HomePage/橘子海 (Orange Ocean) - 夏日漱石 (Summer Cozy Rock).mp3" controls></audio>
 	<br/>
@@ -87,14 +87,14 @@ function display_alert()
   alert('来源是：'+document.referrer + '\nUA是：' + navigator.userAgent);
   }
 </script>
-</head>
+
 <body>
 
 <input type="button" onclick="display_alert()"
 value="显示网页UA(User Agent)" />
 	<br/>
         <br/>
-<font size="4"color="#0080FF">一言</font>
+## 一言
 	<p id="hitokoto"><a href="#" id="hitokoto_text">:D 获取中...</a></p>
 	<!--假装是个分隔条=w=-->
 	<script>
@@ -108,40 +108,6 @@ value="显示网页UA(User Agent)" />
     .catch(console.error)
 	</script>
 
-
-<br/>
-<br/>
-
-</div>
-</div>
-	<!--文章预览卡片结束-->
-	
-<html><body>
-</body></html>
-</div>
-<footer class="mdui-color-theme">
-<div class="footer-icons mdui-col-xs-3 mdui-valign">
-</div>
-<div class="footer-copyright mdui-col-xs-6 mdui-valign">
-<div class="mdui-center">BiliBili 用户：<a href="https://space.bilibili.com/514279030"target="_blank">KFACBT的B站主页</a></div>
-</div>
-<div class="footer-credit mdui-col-xs-3 mdui-valign">
-<div class="mdui-center">
-
-
-
-
-<div>KFACBT</div>
-<div>GitHub Pages</div>
-
-
-
-
-
-</div>
-</div>
-</footer>
-</div>
 <a class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent mdui-fab-hide" id="scrolltop" href="#top"><i class="mdui-icon material-icons">keyboard_arrow_up</i></a>
 <script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
 </body>
