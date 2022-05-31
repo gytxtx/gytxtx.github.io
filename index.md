@@ -108,13 +108,8 @@ value="显示网页UA(User Agent)" />
     .catch(console.error)
 	</script>
 
-<a class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent mdui-fab-hide" id="scrolltop" href="#top"><i class="mdui-icon material-icons">keyboard_arrow_up</i></a>
+
 <script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
-</body>
-</html>
-<script> 
-alert("这是KFACBT的个人主页 "); 
-</script> 
 
 
 
