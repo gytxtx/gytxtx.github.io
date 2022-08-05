@@ -46,70 +46,14 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 *   [rickroll二维码获取](https://arcxingye.github.io/rr/qrcode)
 *   [短链/页面/二维码生成](https://5e.fit/)
 
-不感兴趣的
-*   [adult](https://bonepa.com/9285d94ecb/7b15e6e39b/?placementName=default)
-*   [non-adult](https://qoaaa.com/11de4be8d1/624bff92cd/?placementName=default)
+HTML Sidemap
+*   [首页](https://gytxtx.github.io/HomePage)
+*   [博客](https://gytxtx.github.io/Blog)
+*   [eatyami](https://gytxtx.github.io/eatyami)
 
-相关主页
-*   [Github](https://github.com/arcxingye)
-*   [个人博客](https://xingye.me/)
-*   [bilibili](https://space.bilibili.com/3853579) 点个关注谢谢
+...
+<a href="https://gytxtx.github.io/zzgj">站长工具</a>
 
-这是KFACBT的个人主页
-	
-	<a href="https://gytxtx.github.io/zzgj">站长工具</a>
-
-
-	<a href="https://space.bilibili.com/284572130">Y雅米M的B站主页</a>
-	<br/>
-	<a href="https://space.bilibili.com/514279030">KFACBT的B站主页</a>
-	<br/>
-	<br/>
-<font size="4"color="#0080FF">橘子海 (Orange Ocean) - 夏日漱石 (Summer Cozy Rock)</font>
-	<br/>
-### 线路1
-	<br/>
-	<audio src="./HomePage/music.mp3" controls></audio>
-	<br/>
-### 线路2
-	<br/>
-	<audio src="./HomePage/橘子海 (Orange Ocean) - 夏日漱石 (Summer Cozy Rock).mp3" controls></audio>
-	<br/>
-	<br/>
-<font size="4"color="#0080FF">好果汁，你让我陷入疯狂</font>
-	<br/>
-	<a href="./HomePage/404.html">传送门:【典藏版.补档】因为你我会记住那一分钟</a>
-	<br/>
-	<br/>
-<script type="text/javascript">
-function display_alert()
-  {
-  alert('来源是：'+document.referrer + '\nUA是：' + navigator.userAgent);
-  }
-</script>
-
-<body>
-
-<input type="button" onclick="display_alert()"
-value="显示网页UA(User Agent)" />
-	<br/>
-        <br/>
-## 一言
-	<p id="hitokoto"><a href="#" id="hitokoto_text">:D 获取中...</a></p>
-	<!--假装是个分隔条=w=-->
-	<script>
-  fetch('https://v1.hitokoto.cn')
-    .then(response => response.json())
-    .then(data => {
-      const hitokoto = document.getElementById('hitokoto_text')
-      hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
-      hitokoto.innerText = data.hitokoto
-    })
-    .catch(console.error)
-	</script>
-
-
-<script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
 
 
 
