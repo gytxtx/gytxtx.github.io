@@ -1,6 +1,6 @@
 # 图片
 
-[返回主页](https://github.com/gytxtx)
+[返回主页](https://gytxtx.github.io/)
 
 ---
 
