@@ -22,3 +22,4 @@
 相关主页
 *   [Github](https://github.com/gytxtx)
 *   [个人博客](https://gytxtx.github.io/Blog/)
+*   [姊妹站点](https://kfacbt.github.io)
