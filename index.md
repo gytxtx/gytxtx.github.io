@@ -1,3 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>KFACBT 的网站</title>
+<Link Rel="SHORTCUT ICON" href="./favicon.ico">
+
+</head>
+
+<body>
+
+</body>
+
+</html>
 ## 欢迎来到此网站！
 
 你可能感兴趣的
