@@ -5,7 +5,7 @@
 *   [KFACBT's Toolkit](https://github.com/gytxtx/KFACBT_Toolkit)
 *   [资料参闻馆](https://gytxtx.github.io/Archive)
 *   [图片](https://gytxtx.github.io/Images)
-*   [Phigros的第三方网站](https://gytxtx.gov-cn.xyz/PhigrosWeb/)
+*   [Phigros的第三方网站](https://gytxtx.github.io/PhigrosWeb/)
 
 不感兴趣的
 *   空
