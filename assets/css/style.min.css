@@ -85,3 +85,13 @@ footer {
   margin-top: -16px;
   margin-bottom: 16px;
 }
+
+/* 设置 Copyright 的样式 */
+
+.copyright {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 16px;
+    position: absolute;
+    bottom: 0;
+}
