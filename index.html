@@ -24,6 +24,9 @@
     <link rel="stylesheet" href="assets/css/style.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&family=Tilt+Neon&family=Poppins&display=swap" rel="stylesheet">
 
+    <!-- 引入音频文件 -->
+    <audio id="backgroundMusic" src="./assets/music/Theme_36.mp3" loop style="display:none;"></audio>
+
 </head>
 <body class="mdui-theme-layout-auto mdui-appbar-with-toolbar animate__animated animate__fadeIn animate__fast mdui-theme-primary-indigo mdui-theme-accent-pink">
 
@@ -88,9 +91,18 @@
 
                     <!-- 有工具提示的版本 -->
                     <i class="mdui-icon material-icons" mdui-tooltip="{content: '菜单'}">menu</i>
-                    
+
                 </span>
                 <a class="mdui-typo-title mdui-center title">KFACBT's Website</a>
+
+                <!-- 原先版本不会自动切换音乐图标 -->
+                <!-- <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '背景音乐'}" onclick="toggleBackgroundMusic()">
+                    <i class="mdui-icon material-icons">music_note</i>
+                </a> -->
+                <!-- 这个版本会自动切换音乐图标 -->
+                <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '背景音乐'}" onclick="toggleBackgroundMusic()">
+                    <i id="musicIcon" class="mdui-icon material-icons">music_note</i>
+                </a>
 
                 <!-- 语言切换菜单(未实装) -->
                 <!-- <a class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Language'}" mdui-menu="{target: '#language'}">
@@ -189,4 +201,48 @@
     <!-- <script src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="c2a909e5cd006bf5f01e3499-|49" defer></script> -->
 
 </body>
+
+<!-- JavaScript 部分 -->
+<!-- 这一部分代码的作用：当调用这个函数的时候,会打开一个新标签页,参数是 `url` -->
+<script>
+    function openNewTab(url) {
+        window.open(url, '_blank');
+    }
+</script>
+
+<!-- JavaScript 部分 -->
+<!-- [已废弃]这部分代码的作用：简易的音频播放/暂停状态切换(检测到音频控件播放时暂停，反之亦然。) -->
+<!-- <script>
+function toggleBackgroundMusic() {
+    var audioElement = document.getElementById('backgroundMusic');
+    
+    // 判断当前音频是否处于播放/暂停状态，并切换到相反的状态
+    if (audioElement.paused) {
+        audioElement.play();
+    } else {
+        audioElement.pause();
+    }
+}
+</script> -->
+
+<script>
+// 获取页面中已存在的背景音乐音频元素
+let audioElement = document.getElementById('backgroundMusic'); // 假设你已经有了 audio 元素(划掉,这个是通义灵码生成的注释)
+let musicIcon = document.getElementById('musicIcon'); // 获取用于控制音乐播放/暂停的图标元素
+// 定义切换背景音乐播放状态的函数
+function toggleBackgroundMusic() {
+    if (audioElement.paused) { // 检测音乐控件是否处于暂停状态
+        audioElement.play(); // 如果音乐控件是暂停状态,就播放它
+        musicIcon.className = 'mdui-icon material-icons'; // 设置组件类名(x2)
+        musicIcon.textContent = 'pause'; // 更改为暂停图标(pause)
+    } else {
+        audioElement.pause(); // 如果音乐播放,就暂停它
+        musicIcon.className = 'mdui-icon material-icons'; // 设置组件类名
+        musicIcon.textContent = 'music_note'; // 恢复为音乐图标(music_note),这个是 MDUI 的图标库
+    }
+}
+
+</script>
+
+
 </html>
