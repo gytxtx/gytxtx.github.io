@@ -1,35 +1,196 @@
 <!DOCTYPE html>
-<!-- 开始HTML文档声明 -->
-<html>
-  <head>
-    <!-- 页面头部信息开始 -->
-    <title>KFACBT's Website</title>
-    <!-- 设置网页图标链接 -->
-    <link rel="shortcut icon" href="./favicon.ico" />
-    
-    <!-- 使用HTTP头部实现页面自动跳转，延迟2秒后跳转至指定URL -->
-    <meta http-equiv="refresh" content="2;url=./Old_Website" />
-    
-    <!-- 设置网页字符集为UTF-8 -->
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
-    
-    <!-- JavaScript代码段，用于立即跳转到指定URL -->
-    <script type="text/javascript">
-      // 设置当前页面的URL为指定的目标地址
-      location.href = './Old_Website';
-    </script>
-    
-  </head>
-  
-  <body>
-    <!-- 页面主体内容开始，设置一个居中对齐、具有指定字体样式的段落 -->
-    <p style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size:18px;text-align:center">
-      此页面尚未建设。
-      <br/>
-      <!-- 提供一个超链接，用户点击后将跳转至指定网址 -->
-      您可以跳转至 <a href="./Old_Website">https://gytxtx.github.io/Old_Website</a>来获取更多内容。
-    </p>
-    
-  </body>
-  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KFACBT 的网站">
+    <meta name="keywords" content="gytxtx,KFACBT,Website,官网,KFACBT's Website">
+    <!-- <meta name="author" content="您的名字"> -->
+
+    <!-- 设置页面主题色 -->
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- 设置页面图标 -->
+    <!-- <link rel="shortcut icon" href="./favicon.ico"> -->
+    <link rel="icon" href="./favicon.ico">
+
+    <!-- 设置页面标题 -->
+    <title>KFACBT 的网站</title>
+
+    <!-- 引入 MDUI CSS 文件 -->
+    <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" />
+
+</head>
+
+<body class="mdui-theme-layout-auto mdui-appbar-with-toolbar mdui-theme-primary-indigo mdui-theme-accent-blue">
+
+    <div class="mdui-drawer mdui-drawer-close" id="main-menu">
+        <div class="mdui-list" mdui-collapse="{accordion: true}">
+            <div class="mdui-collapse-item">
+                <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">list</i>
+                    <!-- <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">Home</div> -->
+                    <div class="mdui-list-item-content">内容</div>
+                    <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                </div>
+
+                <div class="mdui-collapse-item-body mdui-list">
+                    <a href="./index.html" class="mdui-list-item mdui-ripple">首页</a>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="mdui-container">
+
+        <!-- 设置应用栏 -->
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-theme">
+                <span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white"
+                    mdui-drawer="{target: '#main-menu', swipe: true}">
+                    <i class="mdui-icon material-icons">menu</i>
+                </span>
+                <a href="javascript:;" class="mdui-typo-headline">KFACBT 的网站</a>
+                <!-- <a href="javascript:;" class="mdui-typo-title">副标题</a> -->
+                <div class="mdui-toolbar-spacer"></div>
+                <!-- <a href="javascript:;" class="mdui-btn mdui-btn-icon">
+                <i class="mdui-icon material-icons">search</i>
+            </a>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon">
+                <i class="mdui-icon material-icons">refresh</i>
+            </a>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon">
+                <i class="mdui-icon material-icons">more_vert</i>
+            </a> -->
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="mdui-container-fluid">
+        <br>
+        <!-- <br> -->
+        <p align="center">
+
+        <div class="mdui-card-content">
+
+            <div class="mdui-typo" style="height: auto !important;">
+                <!-- <h3>欢迎来到 KFACBT 的网站！</h3> -->
+                <h1 class="title">欢迎来到 <strong>KFACBT</strong> 的个人网站！</h1>
+
+                <a href=".\Old_Website\">跳转到旧版网页</a>
+
+                <h2 id="-">关于我</h2>
+                <p>你好，我是 KFACBT，你也可以叫我 gytxtx、KFA、KFC（不是）。2009 年生，生日是 5 月 5 日。对 二次元、Windows、易语言、网站感兴趣。</p>
+
+                <h2 id="-">相关链接</h2>
+
+                <div class="mdui-row">
+                    <div class="mdui-col-md-6">
+                        <div class="mdui-table-fluid">
+                            <table class="mdui-table">
+                                <!-- <table> -->
+                                <thead>
+                                    <tr>
+                                        <th style="text-align:center">社交媒体</th>
+                                        <th style="text-align:center">链接</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="text-align:center">Bilibili</td>
+                                        <td style="text-align:center"><a
+                                                href="https://space.bilibili.com/514279030/">KFACBT</a>
+                                            <em>被封</em>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center">Bilibili #2</td>
+                                        <td style="text-align:center"><a
+                                                href="https://space.bilibili.com/1582448018/">才羽绿可爱捏</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center">GitHub</td>
+                                        <td style="text-align:center"><a href="https://github.com/gytxtx/">gytxtx</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center">Telegram</td>
+                                        <td style="text-align:center"><a href="https://t.me/gytxtx/">gytxtx</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center">QQ</td>
+                                        <td style="text-align:center"><code>1018307946</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center">Website</td>
+                                        <td style="text-align:center"><a
+                                                href="https://gytxtx.github.io/">https://gytxtx.github.io/</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center">E-Mail</td>
+                                        <td style="text-align:center"><a
+                                                href="mailto:gytxtx@outlook.com">gytxtx@outlook.com</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+
+                <h2 id="-">友情链接</h2>
+
+                <div class="mdui-row">
+                    <div class="mdui-col-md-6">
+                        <div class="mdui-table-fluid">
+                            <table class="mdui-table">
+                                <!-- <table> -->
+                                <thead>
+                                    <tr>
+                                        <th style="text-align:center">昵称</th>
+                                        <th style="text-align:center">链接</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="text-align:center">LAGSNES</td>
+                                        <td style="text-align:center"><a href="https://lagsn.es/">https://lagsn.es/</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <p><a href="https://github.com/gytxtx/gytxtx.github.io/">GitHub 仓库</a></p>
+
+                <div class="mdui-divider"></div>
+                <br>
+
+                <p>Copyright © 2024 <a href="https://github.com/gytxtx" target="_blank">KFACBT</a>. All rights
+                    reserved.
+                </p>
+                <p>本站基于 <a href="https://mdui.org/">MDUI</a> 构建，相关版权归原作者所有。</p>
+            </div>
+
+        </div>
+
+
+        </p>
+    </div>
+
+
+    <!-- 引入 MDUI JS 文件 -->
+    <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
+
+</body>
+
 </html>
