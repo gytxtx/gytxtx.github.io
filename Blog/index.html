@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 重定向 -->
+    <meta http-equiv="refresh" content="0; URL='https://gytxtx-blog.pages.dev/'" />
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .root {
+            text-align: center;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            margin-top: 0; /* 去除默认的上边距 */
+        }
+
+        h6 {
+            color: gray;
+            text-align: right;
+            margin: 0; /* 去除默认的上下边距 */
+        }
+
+        p {
+            color: #555;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            margin: 1.5rem 0;
+            border: 0;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+
+    <!-- 重定向 -->
+    <!-- <script type="text/javascript">
+        location.href = 'https://gytxtx-blog.pages.dev/';
+    </script> -->
+</head>
+
+<body>
+
+    <div class="root">
+
+        <h1>正在转向，请稍候...</h1>
+
+        <p>还有 <span id="totalSecond">3</span> 秒</p>
+
+        <p>如果未跳转，请点击 <a href="https://gytxtx-blog.pages.dev/" target="_blank"><strong>这里</strong></a></p>
+
+        <br /><br />
+
+        <hr />
+
+        <h6>Copyright &copy; 2025 <a href="https://github.com/gytxtx/" target="_blank">KFACBT</a>. All rights reserved.
+            | 网站由 <a href="https://hydun.com/" target="_blank"><strong>火毅盾云安全</strong></a> 提供防护及 CDN 加速服务。</h6>
+
+    </div>
+
+    <script language="javascript" type="text/javascript">
+        var second = parseInt(document.getElementById('totalSecond').textContent);
+
+        setInterval(function() {
+            if (second <= 0) {
+                location.href = 'https://gytxtx-blog.pages.dev/';
+            } else {
+                document.getElementById('totalSecond').textContent = --second;
+            }
+        }, 1000);
+    </script>
+</body>
+
+</html>
