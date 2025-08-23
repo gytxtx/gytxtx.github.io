@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 重定向 -->
+    <!-- <meta http-equiv="refresh" content="0; URL='https://gytxtx.top/'" /> -->
+
+    <title>重定向页</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* background-color: #f4f4f9; */
+            margin: 0;
+
+            /* background-image: url("./assets/images/Midori_home_Dummy.png"); */
+            background-image:
+                linear-gradient(rgba(68, 201, 106, 0.75), rgba(68, 201, 106, 0.75)),
+                url("./assets/images/Midori_home_Dummy.png");
+
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .root {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 0;
+        }
+
+        .card {
+            width: 32%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.19);
+            /* text-align: center; */
+            background-color: white;
+            margin: 4rem auto 0;
+            padding: 2rem;
+        }
+
+        h1 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        h2 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        h6 {
+            color: gray;
+            /* text-align: right; */
+            margin: 0;
+
+            /* 特殊排版效果 */
+            display: flex;
+            justify-content: space-between;
+        }
+
+        p {
+            color: #555;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            margin: 1.5rem 0;
+            border: 0;
+            border-top: 1px solid #ddd;
+        }
+
+        /* 适配屏幕宽度 */
+        @media (max-width: 1024px) {
+            div.card {
+                width: 60%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            div.card {
+                width: 80%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.card {
+                width: 95%;
+            }
+        }
+
+        /* 深色模式支持 */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-image:
+                    linear-gradient(rgba(20, 30, 40, 0.85), rgba(20, 30, 40, 0.85)),
+                    url("./assets/images/Midori_home_Dummy.png");
+            }
+
+            .card {
+                background-color: #1a1a1a;
+                /* box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1), 0 4px 6px rgba(255, 255, 255, 0.1); */
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.19);
+            }
+
+            h1,
+            h2 {
+                color: #e0e0e0;
+            }
+
+            h6 {
+                color: #a0a0a0;
+            }
+
+            p {
+                color: #c0c0c0;
+            }
+
+            a {
+                color: #4da6ff;
+            }
+
+            a:hover {
+                color: #80bfff;
+            }
+
+            hr {
+                border-top: 1px solid #444;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="root">
+
+        <div class="card">
+
+            <h2>重定向页面</h2>
+
+            <p>没错，这是个重定向页面，其目的是将你跳转到另一个页面中。</p>
+
+            <p id="endTips">将在 <span id="totalSecond">10</span> 秒后跳转。</p>
+
+            <p id="jumpLink">如果未跳转，请点击 <a href="https://gytxtx.top/" target="_blank"><strong>这里</strong></a>。</p>
+
+            <hr />
+
+            <p>额，好吧。实话说，我想不出来这个页面应该放什么，所以就用重定向页面替代了（</p>
+
+            <p>或者，你有什么好的建议，也可以通过下面的电子邮件链接反馈给我，我将不胜感激。</p>
+
+            <hr />
+
+            <h6>
+                <span style="text-align: left;">
+                    <a href="mailto:gytxtx@outlook.com" target="_blank" style="font-weight: bold;">E-Mail</a>
+                </span>
+                <span>Copyright &copy; 2025 <a href="https://github.com/gytxtx/" target="_blank">KFACBT</a>. All rights
+                    reserved.</span>
+            </h6>
+        </div>
+
+    </div>
+
+    <script language="javascript" type="text/javascript">
+        var second = parseInt(document.getElementById('totalSecond').textContent);
+
+        // 保存计时器 ID，以便清除 -> `var countdown = `
+        var countdown = setInterval(function () {
+            if (second <= 0) {
+                clearInterval(countdown);  // 停止倒计时
+
+                // 重定向方法
+                location.href = 'https://gytxtx.top/';
+
+                setTimeout(() => {
+                    document.getElementById('endTips').textContent = "额，似乎还没有跳转... 你可以点击下面的链接试试...?";
+
+                    // 插入 HTML
+                    document.getElementById('jumpLink').innerHTML =
+                        '<a href="https://gytxtx.top/" target="_blank"><strong>点击这里</strong></a>';
+
+                }, 1.5 * 1000);
+
+            } else {
+                document.getElementById('totalSecond').textContent = --second;
+            }
+        }, 1000);
+    </script>
+</body>
+
+</html>

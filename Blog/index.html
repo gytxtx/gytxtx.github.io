@@ -1,43 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description" content="网站重定向页">
+    <meta name="keywords" content="gytxtx,KFACBT,gytxtx.xyz,gytxtx.top,重定向">
+    <meta name="author" content="gytxtx">
+
+    <!-- 预加载 -->
+    <link rel="preload" href="./assets/images/Midori_home_Dummy.png" as="image">
+
     <!-- 重定向 -->
-    <meta http-equiv="refresh" content="0; URL='https://gytxtx-blog.pages.dev/'" />
+    <!-- <meta http-equiv="refresh" content="0; URL='https://blog.gytxtx.top/'" /> -->
+
+    <!-- 网站图标 -->
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/62281844?v=4" />
+
+    <title>重定向页</title>
 
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
+            font-family: 'Noto Sans SC', Arial, sans-serif;
+            /* background-color: #f4f4f9; */
             margin: 0;
-            padding: 0;
+
+            /* background-image: url("./assets/images/Midori_home_Dummy.png"); */
+            background-image:
+                linear-gradient(rgba(68, 201, 106, 0.75), rgba(68, 201, 106, 0.75)),
+                url("./assets/images/Midori_home_Dummy.png");
+
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .root {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            padding: 0;
         }
 
-        .root {
-            text-align: center;
+        .card {
+            width: 32%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.19);
+            /* text-align: center; */
             background-color: white;
+            margin: 4rem auto 0;
             padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 卡片过渡效果 */
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
         }
 
         h1 {
             color: #333;
-            margin-top: 0; /* 去除默认的上边距 */
+            margin-top: 0;
+        }
+
+        h2 {
+            color: #333;
+            margin-top: 0;
         }
 
         h6 {
             color: gray;
-            text-align: right;
-            margin: 0; /* 去除默认的上下边距 */
+            /* text-align: right; */
+            margin: 0;
+
+            /* 特殊排版效果 */
+            display: flex;
+            justify-content: space-between;
         }
 
         p {
@@ -53,48 +96,219 @@
             text-decoration: underline;
         }
 
+        /* 增强无障碍 */
+        a:focus {
+            outline: 2px solid #4da6ff;
+            outline-offset: 2px;
+        }
+
         hr {
             margin: 1.5rem 0;
             border: 0;
             border-top: 1px solid #ddd;
         }
+
+        footer {
+            color: gray;
+            /* text-align: right; */
+            margin: 0;
+        }
+
+        small {
+            /* 特殊排版效果 */
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* 适配屏幕宽度 */
+        @media (max-width: 1024px) {
+            div.card {
+                width: 60%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            div.card {
+                width: 80%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.card {
+                width: 95%;
+            }
+        }
+
+        /* 深色模式支持 */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-image:
+                    linear-gradient(rgba(20, 30, 40, 0.85), rgba(20, 30, 40, 0.85)),
+                    url("./assets/images/Midori_home_Dummy.png");
+            }
+
+            .card {
+                background-color: #1a1a1a;
+                /* box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1), 0 4px 6px rgba(255, 255, 255, 0.1); */
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.19);
+            }
+
+            h1,
+            h2 {
+                color: #e0e0e0;
+            }
+
+            h6 {
+                color: #a0a0a0;
+            }
+
+            p {
+                color: #c0c0c0;
+            }
+
+            a {
+                color: #4da6ff;
+            }
+
+            a:hover {
+                color: #80bfff;
+            }
+
+            hr {
+                border-top: 1px solid #444;
+            }
+
+            footer {
+                color: #a0a0a0;
+            }
+        }
     </style>
 
-    <!-- 重定向 -->
-    <!-- <script type="text/javascript">
-        location.href = 'https://gytxtx-blog.pages.dev/';
-    </script> -->
 </head>
 
 <body>
 
     <div class="root">
 
-        <h1>正在转向，请稍候...</h1>
+        <div class="card">
 
-        <p>还有 <span id="totalSecond">3</span> 秒</p>
+            <h2>重定向页面</h2>
 
-        <p>如果未跳转，请点击 <a href="https://gytxtx-blog.pages.dev/" target="_blank"><strong>这里</strong></a></p>
+            <p>正在重定向，请稍候...</p>
 
-        <br /><br />
+            <hr />
 
-        <hr />
+            <p id="countdown-message">将在 <span id="totalSecond">10</span> 秒后进行跳转。</p>
 
-        <h6>Copyright &copy; 2025 <a href="https://github.com/gytxtx/" target="_blank">KFACBT</a>. All rights reserved.
-            | 网站由 <a href="https://hydun.com/" target="_blank"><strong>火毅盾云安全</strong></a> 提供防护及 CDN 加速服务。</h6>
+            <p id="status-message">如果未跳转，请点击 <a href="https://blog.gytxtx.top/" target="_blank"
+                    rel="noopener noreferrer"><strong>这里</strong></a>。</p>
+
+            <hr />
+
+            <footer>
+                <small>
+                    <span style="text-align: left;">
+                        <a href="mailto:gytxtx@outlook.com" target="_blank" rel="nofollow"
+                            style="font-weight: bold;">E-Mail</a>
+                    </span>
+                    <span>Copyright &copy; 2025 <a href="https://github.com/gytxtx/" target="_blank"
+                            rel="noopener noreferrer">KFACBT</a>. All
+                        rights
+                        reserved.</span>
+                </small>
+            </footer>
+        </div>
 
     </div>
 
-    <script language="javascript" type="text/javascript">
+    <!-- <script language="javascript" type="text/javascript">
         var second = parseInt(document.getElementById('totalSecond').textContent);
 
-        setInterval(function() {
+        // 保存计时器 ID，以便清除 -> `var countdown = `
+        var countdown = setInterval(function () {
             if (second <= 0) {
-                location.href = 'https://gytxtx-blog.pages.dev/';
+                clearInterval(countdown);  // 停止倒计时
+
+                // 重定向方法
+                location.href = 'https://blog.gytxtx.top/';
+
+                setTimeout(() => {
+                    document.getElementById('endTips').textContent = "额，似乎还没有跳转... 你可以点击下面的链接试试...?";
+
+                    // 插入 HTML
+                    document.getElementById('jumpLink').innerHTML =
+                        '<a href="https://blog.gytxtx.top/" target="_blank" rel="noopener noreferrer"><strong>点击这里</strong></a>';
+
+                }, 1.5 * 1000);
+
             } else {
                 document.getElementById('totalSecond').textContent = --second;
             }
         }, 1000);
+    </script> -->
+
+    <script language="javascript" type="text/javascript">
+        const countdownMessage = document.getElementById('countdown-message');
+        const timerElement = document.getElementById('totalSecond');
+        const statusMessage = document.getElementById('status-message');
+
+        let seconds = parseInt(timerElement.textContent, 10); // 明确进制
+        let countdown;
+
+        function initCountdown() {
+            // const countdown = setInterval(() => {
+
+            countdown = setInterval(() => {
+                if (seconds <= 0) {
+                    clearInterval(countdown);
+                    redirectWithFallback();
+                } else {
+                    seconds--;
+                    timerElement.textContent = seconds;
+                }
+
+            }, 1000);
+        }
+
+        function redirectWithFallback() {
+            // 尝试自动跳转
+            location.href = 'https://blog.gytxtx.top/';
+
+            // 备用方案
+            setTimeout(() => {
+                if (!document.hidden || !document.hasFocus()) { // 检测是否仍在当前页
+                    showFallbackMessage();
+                }
+            }, 1.5 * 1000);
+        }
+
+        function showFallbackMessage() {
+            countdownMessage.textContent = '跳转似乎遇到了问题，请点击下方的链接手动访问。';
+            statusMessage.innerHTML = '<a href="https://blog.gytxtx.top/" target="_blank" rel="noopener noreferrer"><strong>点击这里</strong></a>';
+
+        }
+
+        // 处理页面可见性变化
+        document.addEventListener('visibilitychange', function () {
+            if (document.hidden) {
+                clearInterval(countdown);
+            } else {
+                // 重新计算剩余时间
+                const remaining = seconds;
+                seconds = remaining;
+                if (seconds > 0) {
+                    initCountdown();
+                }
+
+                if (seconds <= 0) {
+                    clearInterval(countdown);
+                    redirectWithFallback();
+                }
+            }
+        });
+
+        // 启动倒计时
+        initCountdown();
     </script>
 </body>
 
