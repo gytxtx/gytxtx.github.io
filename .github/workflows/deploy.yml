@@ -32,10 +32,9 @@ jobs:
           bundler-cache: true
 
       - name: Build with Jekyll
-        run: bundle exec jekyll build --trace
+        run: ruby -r./_plugins/ruby4_compat -S bundle exec jekyll build --trace
         env:
           JEKYLL_ENV: production
-          RUBYOPT: -r./_plugins/ruby4_compat
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
