@@ -6,6 +6,7 @@ repository: gytxtx/gytxtx.github.io
 
 remote_theme: vaibhavvikas/jekyll-theme-minimalistic
 color-scheme: auto
+logo: /assets/img/logo.jpg
 favicon: true
 
 author:
