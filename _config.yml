@@ -1,1 +1,38 @@
-theme: jekyll-theme-minimal
+title: KFACBT
+description: KFACBT 的个人主页
+url: "https://gytxtx.top"
+baseurl: ""
+
+remote_theme: vaibhavvikas/jekyll-theme-minimalistic
+color-scheme: auto
+favicon: true
+
+author:
+  name: gytxtx
+  email: gytxtx@outlook.com
+  github: gytxtx
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+platforms:
+  - name: GitHub
+    icon: <i class="fa-brands fa-github"></i>
+    link: https://github.com/gytxtx/
+  - name: E-Mail
+    icon: <i class="fa-solid fa-envelope"></i>
+    link: mailto:gytxtx@outlook.com
+
+navigation:
+  - name: 首页
+    link: ./index.html
+  - name: 博客
+    link: ./Blog/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md.bak
+  - vendor/
