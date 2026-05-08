@@ -32,7 +32,10 @@ jobs:
           bundler-cache: true
 
       - name: Build with Jekyll
-        run: ruby -r./_plugins/ruby4_compat -S bundle exec jekyll build --trace
+        run: |
+          export RUBYOPT="-r${GITHUB_WORKSPACE}/_plugins/ruby4_compat"
+          ruby -e 'abort("ruby4_compat was not loaded") unless "".respond_to?(:tainted?)'
+          bundle exec jekyll build --trace
         env:
           JEKYLL_ENV: production
 
