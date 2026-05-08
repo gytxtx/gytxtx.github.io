@@ -2,6 +2,7 @@ title: KFACBT
 description: KFACBT 的个人主页
 url: "https://gytxtx.top"
 baseurl: ""
+repository: gytxtx/gytxtx.github.io
 
 remote_theme: vaibhavvikas/jekyll-theme-minimalistic
 color-scheme: auto
